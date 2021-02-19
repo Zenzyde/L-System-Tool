@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97b84c85cc5c9f43aac05a59846ac9a, type: 3}
+  m_Name: Sierpinski Triangle
+  m_EditorClassIdentifier: 
+  rule:
+    sentence: F-f-f
+    segmentLength: 1
+    rndChance: 0
+    zAxisRotationAmount:
+      minValue: 120
+      maxValue: 120
+    yAxisRotationAmount:
+      minValue: 0
+      maxValue: 0
+    xAxisRotationAmount:
+      minValue: 0
+      maxValue: 0
+    rulePairs:
+    - identifier: 70
+      replacement: F-f+F+f-F
+    - identifier: 102
+      replacement: ff
+    isFractal: 1
+    systemType: 1
