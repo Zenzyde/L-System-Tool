@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-[CustomEditor(typeof(L_SystemGenerator))]
+[CustomEditor(typeof(L_SystemCreator))]
 public class L_SystemEditor : Editor
 {
-	private L_SystemGenerator l_System;
+	private L_SystemCreator l_System;
 	private bool destroyedSystem = false;
 
 	public override void OnInspectorGUI()
@@ -16,7 +16,7 @@ public class L_SystemEditor : Editor
 		{
 			if (l_System == null && !GameObject.Find("L_SystemGenerator"))
 			{
-				l_System = (L_SystemGenerator)target;
+				l_System = (L_SystemCreator)target;
 			}
 			l_System.CreateLSystem();
 			destroyedSystem = false;

@@ -6,7 +6,7 @@ public class BranchState : MonoBehaviour
 {
 	public float startWidth = 0, endWidth = 0;
 	public int branchIndex, children = 0;
-	public Vector3 branchPosition, branchDirection;
+	public Vector3 branchPosition, branchDirection, branchEndPosition;
 	public BranchType branchType;
 	public BranchState branchParent;
 	public GameObject branchObj;
@@ -14,11 +14,12 @@ public class BranchState : MonoBehaviour
 	public MeshRenderer renderer;
 	public MeshFilter filter;
 
-	public void SetBranchState(Vector3 pos, Vector3 dir, int index, GameObject branch, BranchType type, BranchState parent,
+	public void SetBranchState(Vector3 pos, Vector3 dir, Vector3 endPos, int index, GameObject branch, BranchType type, BranchState parent,
 		MeshRenderer renderer, MeshFilter filter)
 	{
 		this.branchIndex = index;
 		this.branchPosition = pos;
+		this.branchEndPosition = endPos;
 		this.branchDirection = dir;
 		this.branchType = type;
 		this.branchObj = branch;
@@ -28,7 +29,7 @@ public class BranchState : MonoBehaviour
 		this.filter = filter;
 	}
 
-	public void IncChildCound() => children++;
+	public void IncreaseChildCount() => children++;
 
 	public void SetVisited() => hasBeenVisited = true;
 

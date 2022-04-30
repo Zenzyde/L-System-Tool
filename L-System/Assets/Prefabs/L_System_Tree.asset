@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42568829177c8b9449c83995493636d2, type: 3}
+  m_Name: L_System_Tree
+  m_EditorClassIdentifier: 
+  StartingSentence: F
+  RuleLetterReplacements:
+  - Identifier: 70
+    Replacement: FF+[+F-F-FX]-[-F+F+FX]
+  LetterRules:
+  - Identifier: 70
+    LSystemtAction: 0
+    MovementAmount:
+      minValue: 1
+      maxValue: 1
+  - Identifier: 93
+    LSystemtAction: 10
+    MovementAmount:
+      minValue: 0
+      maxValue: 0
+  - Identifier: 43
+    LSystemtAction: 6
+    MovementAmount:
+      minValue: 22.5
+      maxValue: 22.5
+  - Identifier: 45
+    LSystemtAction: 5
+    MovementAmount:
+      minValue: 22.5
+      maxValue: 22.5
+  - Identifier: 88
+    LSystemtAction: 2
+    MovementAmount:
+      minValue: 60
+      maxValue: 60
+  - Identifier: 91
+    LSystemtAction: 9
+    MovementAmount:
+      minValue: 0
+      maxValue: 0
+  IsFractal: 0

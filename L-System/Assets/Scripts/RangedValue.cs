@@ -8,4 +8,6 @@ public class RangedValue<T>
 {
 	public T minValue;
 	public T maxValue;
+
+	protected T RandValue;
 }
